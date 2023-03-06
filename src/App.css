@@ -1,7 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .player-music {
-    background: rgb(255,0,237);
-    background: linear-gradient(90deg, rgba(255,0,237,1) 0%, rgba(2,0,36,1) 100%);
-    color: red !important;
+    background: rgb(15 23 42) !important;
+}
+
+.rhap-time {
+    color: white;
 }
 
 #rhap_current-time {
@@ -14,9 +22,15 @@
 .web-name {
 background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,237,1) 100%);
-
 }
 
 .body-background {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+/* LOGIN CSS */
+
+
+.rhap_time{
+    color: white  !important;
 }

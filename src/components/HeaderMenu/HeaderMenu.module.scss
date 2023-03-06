@@ -1,0 +1,28 @@
+.wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    background-color: white;
+    width: 240px;
+    border-radius: 10px;
+    .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 15px;
+        &:hover {
+            background-color: aqua ;
+        }
+        h3 {
+            padding-left: 10px;
+        }
+        span {
+            position: absolute;
+            right: 25px;
+        }
+    } 
+}
+
+
+

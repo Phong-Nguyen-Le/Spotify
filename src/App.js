@@ -1,43 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import ListSongs from './components/ListSongs';
-import DetailSong from './components/DetailSong';
-import { Songs } from './Context';
-import DataSongs from './data/songs.json'
-import Playing from './components/Playing';
-import { useState } from 'react';
+import logo from "./logo.svg";
+import "./App.css";
+import { Fragment, useState } from "react";
+
+//import Data
+import DataSongs from "./data/songs.json";
+import { Songs } from "./Context";
+
+//import React router
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { publicRoutes, privateRoutes } from "./routes";
+import { DefaultLayout } from "./components/Layout";
+
 
 function App() {
-   const [song, setSong] = useState(DataSongs[0])
-   const handleSetSong = (idSong) => {
-      const song = DataSongs.find(song => song.id === idSong)
-      if(!song) {
-        setSong(DataSongs[0])
-      } else {
-        setSong(song)
-      }
-    }
+    const [song, setSong] = useState(DataSongs[0]);
+    const handleSetSong = (idSong) => {
+        const song = DataSongs.find((song) => song.id === idSong);
+        if (!song) {
+            setSong(DataSongs[0]);
+        } else {
+            setSong(song);
+        }
+    };
 
-  return (
-    <>
-    <div className="App">
-      <Songs.Provider value={{DataSongs, song, handleSetSong }}>
-        <Navbar />
-        <div className='grid grid-cols-3 bg-slate-500 h-screen-navbar-player overflow-hidden'>
-          {/* span1 */}
-          <DetailSong/>
-          {/* span2 */}
-          <ListSongs/>
-        </div>
-        <Playing />
-      </Songs.Provider>
-      <h1>thay doi</h1>
-      <h1>change</h1>
-    </div>
-    </>
-    
-  );
+    return (
+        <Songs.Provider value={{ DataSongs, song, handleSetSong }}>
+            <Router>
+                <div className="App">
+                    {/* CHILDREN THAY ĐỔI */}
+                    <Routes>
+                        {publicRoutes.map((route, index) => {
+                            let Layout = DefaultLayout;
+                            if(route.layout){
+                              Layout = Fragment
+                            }
+                            return (
+                                <Route
+                                    key={index}
+                                    path={route.path}
+                                    element={
+                                        <Layout>
+                                            <route.component />
+                                        </Layout>
+                                    }
+                                ></Route>
+                            );
+                        })}
+                    </Routes>
+
+                    
+                </div>
+            </Router>
+        </Songs.Provider>
+    );
 }
 
 export default App;
