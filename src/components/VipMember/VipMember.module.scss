@@ -1,0 +1,298 @@
+.header {
+    height: 72px;
+    // width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu-item {
+    padding: 10px;
+}
+
+.login-btn {
+    position: absolute;
+    right: 20px;
+}
+
+.body {
+    padding: 0 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://static-zmp3.zmdcdn.me/skins/zmp3-v5.1/vip/images/bg.jpg")
+        top center no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    height: 600px;
+    color: white;
+    width: calc(100vw - 10px);
+    .logo-headphone {
+        font-size: 70px;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    >p{
+        font-size: 20px;
+        width: 700px;
+        text-align: center;
+    }
+    .packages {
+        display: flex;
+        transform: translateY(10%);
+        color: #444444;
+    }
+    .package {
+        width: 290px;
+        height: 410px;
+        margin: 10px;
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        box-shadow: 0 13px 30px 0 rgba(38,88,180,0.2);
+        >h3{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .line {
+            width: 5.4rem;
+            height: 1px;
+            border: solid 1px black;
+        }
+        >p{
+            font-size: 40px;
+        }
+
+        .now-price{
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            color: #801a81;
+            letter-spacing: 2px;
+            
+        }
+        .price-before-dot{
+            font-size: 70px;
+            font-weight: 500;
+            // float: left;
+        }
+        .price-after-dot{
+            margin-top: 6px;
+           
+            text-align: right;
+            // float: left;
+            .price-number{
+                font-size: 32px;
+                font-weight: 700;
+               
+            }   
+            .price-currency{
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: 0px;
+            }        
+            
+        }
+
+        .old-price{
+            font-size: 25px;
+            text-decoration: line-through;
+            color: rgba(216, 0, 0, 0.733);
+        }
+
+    }
+    button {
+        position: relative;
+        top: 80px;
+        height: 46px;
+        background-color: #1f00d0;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        outline: 0;
+        padding: 10px 45px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        &::before {
+            background-color: initial;
+            background-image: linear-gradient(
+                #fff 0,
+                rgba(255, 255, 255, 0) 100%
+            );
+            border-radius: 125px;
+            content: "";
+            height: 100%;
+            left: 4%;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+            width: 92%;
+        }
+        &:hover {
+            box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+                rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}
+
+.vip-banner {
+    margin-top: 200px;
+    height: 200px;
+    width: 910px;
+    background: url("../../data/carousel/image-vip2.png") no-repeat right top;
+    background-color: rgb(154, 230, 223);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 13px 30px 0 rgba(38,88,180,0.2);
+    >h3{
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    >p{
+        font-size: 20px;
+    }
+    >button{
+        top: 10px;
+        position: relative;
+        height: 46px;
+        background-color: #1f00d0;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        outline: 0;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        &::before {
+            background-color: initial;
+            background-image: linear-gradient(
+                #fff 0,
+                rgba(255, 255, 255, 0) 100%
+            );
+            border-radius: 125px;
+            content: "";
+            height: 100%;
+            left: 4%;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+            width: 92%;
+        }
+        &:hover {
+            box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+                rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}
+
+.another-packages {
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.package-item {
+    height: 390px;
+    width: 450px;
+    background-color: aqua;
+}
+
+.about-vip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul {
+        display: flex;
+    }
+
+    li {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.quality {
+    width: 100%;
+    h2 {
+        display: block;
+        text-align: center;
+    }
+    .quality-content {
+        float: left;
+        width: 60%;
+        display: block;
+    }
+
+    .quality-image {
+        float: right;
+        width: 40%;
+        transform: scaleX(-1);
+    }
+}
+
+.library {
+    background: url("https://static-zmp3.zmdcdn.me/skins/zmp3-v5.1/vip/images/bg_library.jpg");
+    height: 450px;
+    width: calc(100vw - 10px);
+    padding: 0;
+}

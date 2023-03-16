@@ -1,0 +1,37 @@
+.wrapper {
+/* Created with https://www.css-gradient.com */
+background: #080181;
+background: -webkit-radial-gradient(center, #080181, #47085C);
+background: -moz-radial-gradient(center, #080181, #47085C);
+background: radial-gradient(ellipse at center, #080181, #47085C);
+padding: 10px 20px;
+  h3{
+    font-weight: 600;
+    font-size: 16px;
+  }
+  span>p{
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+  }
+  span{
+    
+  }
+
+  div{
+    display: flex;
+    align-items: center;
+  }
+  .avatar{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  
+  .image{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

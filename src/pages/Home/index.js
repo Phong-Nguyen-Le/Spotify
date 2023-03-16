@@ -1,5 +1,5 @@
-import ListSongs from "./ListSongs";
-import DetailSong from "./DetailSong";
+import ListSongs from "../../components/ListSongs/ListSongs";
+import DetailSong from "../../components/DetailSong";
 
 function Home() {
     return (
