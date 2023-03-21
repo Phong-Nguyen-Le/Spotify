@@ -1,10 +1,21 @@
 .wrapper {
-/* Created with https://www.css-gradient.com */
-background: #080181;
-background: -webkit-radial-gradient(center, #080181, #47085C);
-background: -moz-radial-gradient(center, #080181, #47085C);
-background: radial-gradient(ellipse at center, #080181, #47085C);
-padding: 10px 20px;
+  margin: 8px 20px/* 8px */;
+  padding: 10px 30px;
+  border-radius: 10px;
+  /* Created with https://www.css-gradient.com */
+  background: #080181;
+  background: -webkit-radial-gradient(center, #080181, #47085C);
+  background: -moz-radial-gradient(center, #080181, #47085C);
+  background: radial-gradient(ellipse at center, #080181, #47085C);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  >div{
+    width: 100%;
+    
+  }
   h3{
     font-weight: 600;
     font-size: 16px;
@@ -13,8 +24,8 @@ padding: 10px 20px;
     font-size: 14px;
     color: rgb(128, 128, 128);
   }
-  span{
-    
+  p{
+    width: 100%;
   }
 
   div{
@@ -30,8 +41,8 @@ padding: 10px 20px;
   }
   
   .image{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
   }
 }

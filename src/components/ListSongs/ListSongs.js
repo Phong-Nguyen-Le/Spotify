@@ -20,7 +20,7 @@ export default function ListSongs() {
 
     return (
         <>
-            <div className="col-span-2 overflow-y-scroll">
+            <div className={cx("wrapper")}>
                 <table className=" table-auto">
                     <thead className="text-white h-12">
                         <tr>

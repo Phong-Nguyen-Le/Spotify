@@ -4,7 +4,6 @@ import DataPosts from "../../data/db.json";
 import Modal from "../../Modal/Modal";
 import classNames from "classnames/bind";
 import styles from "./HotNews.module.scss";
-import clsx from "clsx";
 
 const cx = classNames.bind(styles);
 function Hotnews() {
@@ -18,7 +17,7 @@ function Hotnews() {
         setModal(!modal);
     };
 
-    const [id, setId] = useState();
+    const [id, setId] = useState(1);
 
     const navbar = [
         {
@@ -76,7 +75,6 @@ function Hotnews() {
                             key={post.id}
                             onClick={() => toggleModal(post.id)}
                             className={cx(
-                                "mx-2 my-2 text-white rounded-xl",
                                 "wrapper"
                             )}
                         >
@@ -92,7 +90,7 @@ function Hotnews() {
                             </div>
                             <p>{post.description}</p>
                             <img className={cx("image")} src={post.image}></img>
-                            <div className="mb-5">
+                            <div className="mb-1">
                                 <span className="">
                                     {" "}
                                     <i class="fa-regular fa-heart"></i>999

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import VipMember from "../../components/VipMember/VipMember";
 
 
-function Another() {
+function VipPage() {
    
     
    
@@ -15,4 +15,4 @@ function Another() {
     )
 }
 
-export default Another;
+export default VipPage;

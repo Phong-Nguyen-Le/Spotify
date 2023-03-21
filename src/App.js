@@ -14,18 +14,12 @@ import { DefaultLayout } from "./components/Layout";
 function App() {
      // Thay đổi địa điểm phát nhạc (Home / placelist)
      const [place, setPlace] = useState("");
-    console.log(`place1`, place)
-
     // DataSongs[0]
-    const [song, setSong] = useState("");
+    const [song, setSong] = useState('');
     const handleSetSong = (idSong, placePara) => {
-        console.log(`before-place:`, placePara )
-        
         if( placePara ) {
             setPlace(placePara);
         } else placePara = place
-        console.log(`place:`, place)
-        console.log(`song:`, song)
         if (placePara == "home") {
             const song = DataSongs.find((song) => song.id === idSong);
             if (!song) {
@@ -44,12 +38,14 @@ function App() {
         }
     };
 
+
     // Thêm bài hát vào danh sách phát
     const [playList, setPlayList] = useState([]);
     const handleAddList = (song) => {
         if (playList.includes(song)) return;
         setPlayList((pre) => [...pre, song]);
     };
+
     const handleDeleteItemfromList = (idSong) => {
         const newPlayList = playList.filter((item) => item.id !== idSong);
         setPlayList(newPlayList);

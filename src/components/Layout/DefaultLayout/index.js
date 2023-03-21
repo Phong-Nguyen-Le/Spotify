@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Sidebar from "../../Sidebar/Sidebar";
 import Playing from "./Playing";
 import {Songs} from "../../../Context"
 import React, { useContext} from "react";

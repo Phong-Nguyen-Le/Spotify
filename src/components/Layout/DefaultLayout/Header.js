@@ -6,10 +6,10 @@ import HeaderAction from "../../HeaderAction/HeaderAction";
 
 export default function Header() {
     return (
-        <div className=" w-screen h-24 web-name fixed top-0 grid grid-cols-7 ">
+        <div className=" w-screen h-24 web-name fixed top-0 grid grid-cols-7 z-[3]">
             <div className="col-span-1 text-white text-2xl leading-[6rem]">
                 <Link to="/">
-                    <i class="fa-brands fa-spotify mr-5"></i>
+                    <i class="fa-brands fa-spotify mr-5 ml-10"></i>
                     SpotiFong
                 </Link>
             </div>

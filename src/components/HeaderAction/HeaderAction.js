@@ -15,7 +15,7 @@ function HeaderAction() {
                 <i class="fa-solid fa-download"></i>Download App
             </button>
             <Link to="/loginPage">
-            <button className={cx("login-btn")}>Login</button>
+            <button className={cx("login-btn")} title="login">Login</button>
             </Link>
             <Tippy
                 trigger="click"

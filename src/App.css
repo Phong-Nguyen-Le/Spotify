@@ -66,12 +66,12 @@ body::-webkit-scrollbar {
     position: absolute;             /* width of the entire scrollbar */
   }
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.205);        /* color of the tracking area */
   }
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: rgb(153, 0, 255);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     /* border: 1px solid orange;  creates padding around scroll thumb */
-  }
+}

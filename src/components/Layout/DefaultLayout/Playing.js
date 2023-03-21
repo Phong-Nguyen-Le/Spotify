@@ -1,13 +1,21 @@
-import React, { useContext } from "react";
+import React, { createRef, useContext, useEffect } from "react";
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import { Songs } from "../../../Context";
 
 export default function Playing() {
+    
+    let player = createRef()
+   
     const {song, handleSetSong} = useContext(Songs)
     const handleClickNext = () => {
         handleSetSong(song.id+1)
     }
+
+    useEffect(()=> {
+        console.log(player.current)
+
+    })
 
     const handleClickPrevious = () => {
         handleSetSong(song.id-1)
@@ -23,6 +31,7 @@ export default function Playing() {
             onClickNext={handleClickNext}
             onClickPrevious={handleClickPrevious}
             onEnded={handleClickNext}
+            ref={player}
             />
         </div>
     )
