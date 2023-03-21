@@ -1,0 +1,155 @@
+.list-btn{
+  height: 46px;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #1f00d0;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+  text-align: center;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  &::before {
+    height: 100%;
+    width: 92%;
+    position: absolute;
+    left: 4%;
+    top: 0;
+      background-color: initial;
+      background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+      border-radius: 125px;
+      content: "";
+      opacity: 0.5;
+      transition: all 0.3s;
+  }
+  &:hover {
+      box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+          rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+      transform: scale(1.05);
+  }
+  &:active {
+      transform: translateY(2px);
+  }
+  >p{
+    margin-left: 5px;
+  }
+  >span{
+    margin-left: 10px;
+    color: black;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 9999px;
+    text-align: center;
+    
+  }
+}
+
+.container {
+  height: auto;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  bottom: 88px;
+  right: 10px;
+  border-radius: 25px 25px 0 0;
+  transform: translateX(110%);
+  transition: ease-in-out 0.3s;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #5227b4;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  
+  >p{
+    font-weight: 600;
+    text-transform:uppercase;
+  }
+  >i{
+    position: relative;
+    left: 10px;
+    background-color: rgb(243, 77, 77);
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: white;
+  }
+}
+
+
+.body {
+  padding: 0 10px;
+  max-height: 650px;
+  overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar {
+  width: 10px;  
+  position: absolute;             /* width of the entire scrollbar */
+}
+
+.body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.205);        /* color of the tracking area */
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 0, 255);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 1px solid orange;  creates padding around scroll thumb */
+}
+
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+    >span{
+      width: 5%;
+      text-align: center;
+    }
+    >img{
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    >div{
+      width: 60%;
+       // position: absolute;
+       >span{
+        color: rgb(139, 139, 139);
+        font-size: 14px;
+       }
+    }
+    >i{
+      width: 10%;
+      text-align: center;
+    }
+}
+
+.item0{
+  text-align: center;
+  height: 70px;
+  font-size: 18px;
+  line-height: 70px;
+}
+
+.active {
+  transform: translateX(0);
+}

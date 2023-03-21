@@ -1,0 +1,47 @@
+.login, .vip{
+  width: 90%;
+  height: 120px;
+  margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #1f00d0;
+    border-radius: 10px;
+    :hover{
+      color: rgba(206, 206, 206, 0.808);
+      border-color: rgba(206, 206, 206, 0.808);
+    }
+    &::before {
+        
+        width: 90%;
+        height: 120px;
+        background-image: linear-gradient(
+            #ffffffc7 0,
+            rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 10px;
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        transition: all 0.3s;  
+    }
+    >p{
+      margin: 0 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+    button{
+      position: relative;
+      padding: 2px 40px;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+}
+
+
+.vip{
+
+}
+

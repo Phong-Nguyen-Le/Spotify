@@ -10,13 +10,11 @@ function HeaderMenu() {
         {
             icon: <i class="fa-solid fa-ban"></i>,
             title: "Danh sách chặn",
-            level2: false,
-            content: []
+            content: [],
         },
         {
             icon: <i class="fa-solid fa-music"></i>,
             title: "Chất lượng nhạc",
-            level2: true,
             icon2: <i class="fa-solid fa-chevron-right"></i>,
             content: [
                 {
@@ -33,7 +31,6 @@ function HeaderMenu() {
         {
             icon: <i class="fa-solid fa-display"></i>,
             title: "Giao diện",
-            level2: true,
             icon2: <i class="fa-solid fa-chevron-right"></i>,
             content: [
                 {
@@ -47,7 +44,6 @@ function HeaderMenu() {
         {
             icon: <i class="fa-solid fa-arrows-turn-right"></i>,
             title: "Chuyển bài",
-            level2: true,
             icon2: <i class="fa-solid fa-chevron-right"></i>,
             content: [
                 {
@@ -58,34 +54,31 @@ function HeaderMenu() {
         {
             icon: <i class="fa-solid fa-circle-info"></i>,
             title: "Giới thiệu",
-            level2: false,
-            content: []
+            content: [],
         },
         {
             icon: <i class="fa-solid fa-circle-info"></i>,
             title: "Liên hệ",
-            level2: false,
-            content: []
+            content: [],
         },
         {
             icon: <i class="fa-brands fa-adversal"></i>,
             title: "Quảng cáo",
-            level2: false,
-            content: []
+            content: [],
         },
         {
             icon: <i class="fa-solid fa-handshake"></i>,
             title: "Thỏa thuận sử dụng",
-            level2: false,
-            content: []
+            content: [],
         },
         {
             icon: <i class="fa-solid fa-shield"></i>,
             title: "Chính sách bảo mật",
-            level2: false,
-            content: []
+            content: [],
         },
     ];
+
+    // test
 
     return (
         <div className={cx("wrapper")}>
@@ -96,12 +89,16 @@ function HeaderMenu() {
                     placement="left-start"
                     render={(attrs) => (
                         <div className="box" tabIndex="-1" {...attrs}>
-                            {item.content.map((item) => {
-                                return <div>
-                                        {item.title}
-                                        {item.content}
-                                    </div>
-                            })}
+                            <div className={cx("wrapper-2")}>
+                                {item.content.map((item) => {
+                                    return (
+                                        <div className={cx("item2")}>
+                                            <h3>{item.title}</h3>
+                                            <span>{item.content}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
                     )}
                 >
