@@ -29,7 +29,10 @@ function Modal({
                             e.stopPropagation();
                         }}
                         className={cx("modal-content")}
-                    >
+                    >   
+                  
+
+
                         <div className={cx("left-content")}>
                             <img src={image} />
                         </div>
@@ -63,6 +66,8 @@ function Modal({
                                 Sign in to comment
                             </button>
                         </div>
+
+
                         <button
                             className={cx("close-modal")}
                             onClick={toggleModal}

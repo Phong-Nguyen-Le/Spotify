@@ -109,6 +109,10 @@ function Hotnews() {
                                 postId={post.id}
                                 modalId={modalId}
                             />
+                            <Modal>
+
+                                
+                            </Modal>
                         </div>
                     );
                 })}
