@@ -31,8 +31,6 @@ function Modal({
                         className={cx("modal-content")}
                     >   
                   
-
-
                         <div className={cx("left-content")}>
                             <img src={image} />
                         </div>

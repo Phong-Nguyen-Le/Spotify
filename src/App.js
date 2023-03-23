@@ -26,7 +26,6 @@ function App() {
                 setSong(DataSongs[0]); 
             } else {
                 setSong(song);
-                console.log(`song:`, song)
             }
         } else if (placePara == "playlist") {
             const song = playList.find((song) => song.id === idSong);
