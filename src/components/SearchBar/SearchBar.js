@@ -49,6 +49,7 @@ function SearchBar() {
     return (
         <Tippy
             onClickOutside={handleHideResult}
+            placement="bottom"
             interactive
             visible={searchResult.length > 0 && showResult}
             render={(attrs) => (
