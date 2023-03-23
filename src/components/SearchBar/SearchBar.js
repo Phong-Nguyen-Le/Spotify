@@ -17,8 +17,6 @@ function SearchBar() {
         setSearchInput(event);
     };
     
-
-
     const inputRef = useRef()
     useEffect(() => {
         let filterData = [];

@@ -21,12 +21,12 @@ export default function ListSongs() {
     return (
         <>
             <div className={cx("wrapper")}>
-                <table className=" table-auto">
-                    <thead className="text-white h-12">
+                <table className=" table-auto w-full">
+                    <thead className="text-white h-12 max-md:text-sm">
                         <tr>
                             <th className="w-[15%]">#</th>
-                            <th className="text-left">TITLE</th>
-                            <th className="w-[15%] max-md:hidden">AUTHOR</th>
+                            <th className="w-[70%] text-left">NAME OF THE SONG</th>
+                            <th className="max-md:hidden" >AUTHOR</th>
                             <th className="w-[15%]">#</th>
                         </tr>
                     </thead>
@@ -34,14 +34,15 @@ export default function ListSongs() {
                         {DataSongs.map((song, index) => (
                             <tr
                                 key={index}
-                                className={`h-12 xl:h-11 text-gray-200 hover:text-white ${
+                                className={`h-12 xl:h-11 text-gray-200 max-md:text-xs hover:text-white ${
                                     idSong === song.id &&
                                     "text-red-600 bg-gray-400 bg-opacity-50"
                                 }`}
                             >
                                 <td className="text-center">{index + 1}</td>
-                                <td onClick={() => handlePlaysong(song.id,"home")}>
+                                <td className="max-md:text-sm max-md:font-medium" onClick={() => handlePlaysong(song.id,"home")}>
                                     {song.name}
+                                    <p className="md:hidden max-md:text-xs max-md:font-thin">{song.author}</p>
                                 </td>
                                 <td className="text-center max-md:hidden">{song.author}</td>
                                 <td className="text-center">

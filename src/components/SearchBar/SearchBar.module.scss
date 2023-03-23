@@ -25,7 +25,7 @@
         color: black;
         scale: 1.2;
     }
-
+    
     &::after{
         content: "";
         position: absolute;
@@ -161,16 +161,38 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
     .search{
-        width: 80%;
-        height: 48px;
-        display: flex;
-        font-size: 14px;
+        height: 30px;
+        width: 95%;
+        font-size: 12px;
+        &::after{
+            right: 42px;
+        }
         input{
-            margin-left: 20px;
-            width: 100%;
+            
+        }
+        .clear{
+            right: 20px;
         }
         button{
             width: 4rem;
+        }
+    }
+
+    .search-result{
+        width: 300px;
+    }
+    .search-result-item{
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 14px;   
+        >img{
+            width: 13%;
+            border-radius: 10px;
+        }
+        .search-result-action{
+
         }
     }
 }

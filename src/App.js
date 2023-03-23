@@ -37,8 +37,15 @@ function App() {
         }
     };
 
+    // Hide/show Menu trên Mobile
+    const [showMenu, setShownMenu] = useState(false)
+    const handleShowMenu = () => {
+        setShownMenu(pre => !pre)
+    }
 
-    // Thêm bài hát vào danh sách phát
+
+
+    // Thêm bài hát vào danh sách phát + Xóa bài hát 
     const [playList, setPlayList] = useState([]);
     const handleAddList = (song) => {
         if (playList.includes(song)) return;
@@ -58,7 +65,9 @@ function App() {
                 handleSetSong,
                 handleAddList,
                 handleDeleteItemfromList,
-                playList
+                playList,
+                showMenu,
+                handleShowMenu,
             }}
         >
             <Router>

@@ -100,12 +100,12 @@
         display: none;
     }
     .login-btn, .menu-btn {
-        height: 48px;
+        height: 30px;
         border: 0;
         border-radius: 9999px;
         font-size: 14px;
         font-weight: 600;
-        padding: 0 15px;
+        padding: 0 5px;
         &::before {
             border-radius: 9999px;
         }

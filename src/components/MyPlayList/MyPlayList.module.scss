@@ -192,26 +192,72 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
     .list-btn {
-    height: 46px;
+    height: 80px;
     padding: 0 10px;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #1f00d0;
-    border: 0;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    outline: 0;
-    text-align: center;
-    transition: all 0.3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 12px;
     &::before {
-        border-radius: 50px; 
+        border-radius: 10px; 
     }
+    > p {
+        margin: 5px 0;
     }
+    > span {
+        margin-left: 0px;
+        height: 20px;
+        width: 20px;
+        border-radius: 9999px;
+     }
+    }
+    .container {
+        height: auto;
+        width: 300px;
+        background-color: white;
+        position: absolute;
+        bottom: 88px;
+        right: 10px;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .header {
+        > p {
+            font-size: 12px;
+        }  
+    }
+    .item0{
+        font-size: 14px;
+        height: 52px;
+        line-height: 50px;
+    }
+    
+    .item {
+        padding: 5px 0;
+        > img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        > div {
+            width: 60%;
+            // position: absolute;
+            >p{ 
+                font-size: 12px;
+            }
+            > span {
+                color: rgb(139, 139, 139);
+                font-size: 12px;
+            }
+        }
+        > i {
+            width: 10%;
+            text-align: center;
+        }
+    }
+
 }
