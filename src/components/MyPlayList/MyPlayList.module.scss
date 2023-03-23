@@ -190,6 +190,28 @@
  
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  
+@media (min-width: 0px) and (max-width: 767px) {
+    .list-btn {
+    height: 46px;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #1f00d0;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: 0;
+    text-align: center;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    &::before {
+        border-radius: 50px; 
+    }
+    }
 }

@@ -9,7 +9,7 @@ export default function Header() {
             <div className="w-full max-lg:h-28 lg:h-16 xl:h-20 top-0 grid grid-cols-7 z-[3] background-color fixed">
                 <div className="col-span-1 text-white text-2xl flex justify-center items-center ">
                     <Link to="/">
-                        <div className="text-center ">
+                        <div className="text-center max-md:text-base max-md:pl-5">
                             <i class="fa-brands fa-spotify"></i>
                             SpotiFong
                         </div>

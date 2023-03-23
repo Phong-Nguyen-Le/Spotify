@@ -13,19 +13,19 @@ export default function Sidebar() {
 
 
     return (
-        <div className="h-full w-[250px] max-xl:w-[20%] max-lg:w-[30%] background-color font-bold text-white fixed">
+        <div className={cx("background-color", "container")}>
             <ul className="border-b-2 ">
                 {publicRoutes.map((route, index) => {
                     if (!route.layout) {
                         return (
                             <Link to={route.path}>
                                 <li
-                                    className={`px-10 py-3 max-xl:py-2 max-lg:py-5 text-left text-gray-300 transition-[transform 0.6s ease-in-out] hover:text-white ${active == index && "bg-[#e8e8e836]"}`}
+                                    className={cx(`${active == index && "bg-[#e8e8e836]"}`, "item")}
                                     key={index}
                                     onClick={() => setActive(index)}
                                 >
                                     <div className="flex items-center">
-                                        {route.icon}
+                                        <i>{route.icon}</i>
                                         <h2 className="pl-5 max-xl:text-sm">{route.name}</h2>
                                     </div>
                                 </li>

@@ -21,7 +21,7 @@ export default function Playing() {
         handleSetSong(song.id-1)
     }
     return (
-        <div className='col-span-6'>    
+        <div className='col-span-6 max-md:col-span-2'>    
             <AudioPlayer 
             src={song.url} 
             className="player-music" 

@@ -24,9 +24,9 @@ export default function ListSongs() {
                 <table className=" table-auto">
                     <thead className="text-white h-12">
                         <tr>
-                            <th className="w-[10%]">#</th>
+                            <th className="w-[15%]">#</th>
                             <th className="text-left">TITLE</th>
-                            <th className="w-[15%]">AUTHOR</th>
+                            <th className="w-[15%] max-md:hidden">AUTHOR</th>
                             <th className="w-[15%]">#</th>
                         </tr>
                     </thead>
@@ -43,7 +43,7 @@ export default function ListSongs() {
                                 <td onClick={() => handlePlaysong(song.id,"home")}>
                                     {song.name}
                                 </td>
-                                <td className="text-center">{song.author}</td>
+                                <td className="text-center max-md:hidden">{song.author}</td>
                                 <td className="text-center">
                                     <Tippy
                                         interactive
