@@ -38,9 +38,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    color: white;
   }
   
+ .btn-slide:hover{
+  border: white 2px solid;
+ }
+
+
   .prev {
     top: 50%;
     left: 20px;

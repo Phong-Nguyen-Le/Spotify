@@ -13,20 +13,20 @@ export default function Sidebar() {
 
 
     return (
-        <div className="h-[calc(100vh-88px-96px)]  w-[250px] navbar font-bold text-white bg-slate-800 fixed">
-            <ul className="border-b-2">
+        <div className="h-full w-[250px] max-xl:w-[20%] max-lg:w-[30%] background-color font-bold text-white fixed">
+            <ul className="border-b-2 ">
                 {publicRoutes.map((route, index) => {
                     if (!route.layout) {
                         return (
                             <Link to={route.path}>
                                 <li
-                                    className={`px-10 py-3 text-left text-gray-300 transition-[transform 0.6s ease-in-out] hover:text-white ${active == index && "bg-[#e8e8e836]"}`}
+                                    className={`px-10 py-3 max-xl:py-2 max-lg:py-5 text-left text-gray-300 transition-[transform 0.6s ease-in-out] hover:text-white ${active == index && "bg-[#e8e8e836]"}`}
                                     key={index}
                                     onClick={() => setActive(index)}
                                 >
-                                    <div className=" flex items-center">
+                                    <div className="flex items-center">
                                         {route.icon}
-                                        <h2 className=" pl-5">{route.name}</h2>
+                                        <h2 className="pl-5 max-xl:text-sm">{route.name}</h2>
                                     </div>
                                 </li>
                             </Link>
@@ -36,13 +36,13 @@ export default function Sidebar() {
             </ul>
             <div className={cx("login")}>
                 <p>Sign in to discover playlists just for you</p>
-                <Link to="loginPage">
+                <Link to="/loginPage">
                 <button >Login</button>
                 </Link>
             </div>
             <div className={cx("vip")}>
                 <p>Listen to music without ads with VIP packages</p>
-                <Link to="vippage">
+                <Link to="/vippage">
                 <button >Buy VIP</button>
                 </Link>
             </div>

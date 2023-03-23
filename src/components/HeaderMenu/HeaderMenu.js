@@ -57,7 +57,7 @@ function HeaderMenu() {
             content: [],
         },
         {
-            icon: <i class="fa-solid fa-circle-info"></i>,
+            icon: <i class="fa-solid fa-phone-flip"></i>,
             title: "Liên hệ",
             content: [],
         },

@@ -49,7 +49,7 @@ function Hotnews() {
     };
 
     return (
-        <Tabs className=" col-span-3">
+        <Tabs className="col-span-3">
             <TabList className="flex justify-between mt-3 bg-slate-700 w-[500px] mx-auto rounded-xl">
                 {navbar.map((item) => {
                     return (
@@ -68,7 +68,7 @@ function Hotnews() {
             </TabList>
 
             {/* Post Viet Nam */}
-            <TabPanel className=" grid grid-cols-3 mt-5 mx-14">
+            <TabPanel className=" grid grid-cols-3 max-lg:grid max-lg:grid-cols-2 mt-5 mx-14 max-2xl:mx-5 " >
                 {dataPosts.map((post) => {
                     return (
                         <div

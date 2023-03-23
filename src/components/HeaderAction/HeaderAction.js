@@ -12,7 +12,7 @@ function HeaderAction() {
         <>
             <button className={cx("download-btn")}>
                 {" "}
-                <i class="fa-solid fa-download"></i>Download App
+                <i class="fa-solid fa-download"></i> Download App
             </button>
             <Link to="/loginPage">
             <button className={cx("login-btn")} title="login">Login</button>

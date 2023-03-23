@@ -26,20 +26,17 @@ export default function ListSongs() {
                         <tr>
                             <th className="w-[10%]">#</th>
                             <th className="text-left">TITLE</th>
-                            <th className="w-[10%]">AUTHOR</th>
-                            <th className="w-[10%]">Setting</th>
-                            <th className="w-[10%]">
-                                <i className="fa fa-download"></i>
-                            </th>
+                            <th className="w-[15%]">AUTHOR</th>
+                            <th className="w-[15%]">#</th>
                         </tr>
                     </thead>
                     <tbody className="">
                         {DataSongs.map((song, index) => (
                             <tr
                                 key={index}
-                                className={`h-12 text-white hover:bg-slate-100 hover:text-blue-700 ${
+                                className={`h-12 xl:h-11 text-gray-200 hover:text-white ${
                                     idSong === song.id &&
-                                    "text-red-600 bg-slate-200"
+                                    "text-red-600 bg-gray-400 bg-opacity-50"
                                 }`}
                             >
                                 <td className="text-center">{index + 1}</td>
@@ -59,23 +56,17 @@ export default function ListSongs() {
                                                 {...attrs}
                                             >
                                                 <div className={cx("action")} >
-                                                    <div className="relative" onClick={() => handleAddList(song)}>
+                                                    <div className={cx("item2")} onClick={() => handleAddList(song)}>
                                                         <i class="fa-solid fa-circle-plus"></i>
-                                                        Add to playlist
+                                                        <p>Add to playlist</p>
                                                     </div>
-                                                    <div>Download</div>
+                                                    <a className={cx("item2")} href={song.url} onClick={() => console.log(`down`)}>Download</a>
                                                 </div> 
                                             </div>
                                         )}
                                     >
                                         <i class="fa-solid fa-ellipsis"></i>
                                     </Tippy>
-                                </td>
-                                <td className="text-center">
-                                    <i
-                                        href={song.url}
-                                        className="fa fa-download"
-                                    ></i>
                                 </td>
                             </tr>
                         ))}

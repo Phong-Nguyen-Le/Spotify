@@ -1,3 +1,14 @@
+html,body
+{
+    overflow-x: hidden; 
+}
+
+
+:root{
+
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,18 +23,11 @@ background: -moz-linear-gradient(top, rgba(41, 1, 176, 1.0), rgba(1, 1, 1, 1.0))
 background: linear-gradient(to bottom, rgba(41, 1, 176, 1.0), rgba(1, 1, 1, 1.0));
 }
 
-.rhap-time {
-    color: white;
-}
-
-#rhap_current-time {
-    color: white;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
-.web-name {
+.background-color {
 /* Created with https://www.css-gradient.com */
 background: rgba(41, 1, 176, 1.0);
 background: -webkit-radial-gradient(center, rgba(41, 1, 176, 1.0), rgba(1, 1, 1, 1.0));
@@ -34,9 +38,6 @@ background: radial-gradient(ellipse at center, rgba(41, 1, 176, 1.0), rgba(1, 1,
 .body-background {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
-
-/* LOGIN CSS */
-
 
 .rhap_time{
     color: white  !important;
@@ -52,6 +53,7 @@ background: radial-gradient(ellipse at center, rgba(41, 1, 176, 1.0), rgba(1, 1,
 }
 
 
+
 .home-background{
     background: url('https://images3.alphacoders.com/588/588412.jpg');
     background-size: cover;
@@ -59,19 +61,51 @@ background: radial-gradient(ellipse at center, rgba(41, 1, 176, 1.0), rgba(1, 1,
 }
 
 
-
+/* CSS Scroll bar */
 
 body::-webkit-scrollbar {
-    width: 10px;  
-    position: absolute;             /* width of the entire scrollbar */
+    width: 8px;  
+    position: absolute;            
   }
   
 body::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.205);        /* color of the tracking area */
+    background: rgba(0, 0, 0, 0.205);       
   }
   
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(153, 0, 255);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    /* border: 1px solid orange;  creates padding around scroll thumb */
+    background-color: rgb(153, 0, 255);    
+    border-radius: 20px;       
+}
+
+
+
+
+
+
+
+
+
+
+.rhap_container.rhap_loop--off.rhap_play-status--paused.player-music {
+    padding: 10px 10px;
+}
+
+
+@media (min-width: 1280px) and (max-width:1535px) {
+  
+}
+
+@media (min-width: 1024px) and (max-width:1279px) {
+    .rhap_container.rhap_loop--off.rhap_play-status--paused.player-music {
+        padding: 5px 10px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+ 
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  
 }

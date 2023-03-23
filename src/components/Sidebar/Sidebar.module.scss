@@ -41,7 +41,37 @@
 }
 
 
-.vip{
 
+@media (min-width: 1280px) and (max-width:1535px) {
+  
 }
 
+@media (min-width: 1024px) and (max-width:1279px) {
+  .login, .vip{
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;  
+      &::before {
+          width: 90%;
+          height: 80px;
+      }
+      >p{
+        margin: 0 20px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      button{
+        padding: 2px 40px;
+        font-size: 14px;
+      }
+  }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+ 
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  
+}
