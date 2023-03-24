@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 30;
 }
 
 body.active-modal {
@@ -27,7 +27,7 @@ body.active-modal {
     line-height: 1.4;
     background-color: black;
     border-radius: 3px;
-    z-index: 5;
+    z-index: 31;
     color: white;
     
 }

@@ -15,7 +15,6 @@ export default function Sidebar() {
 
     // hide/show Menu trên mobile
     const {showMenu} = useContext(Songs);
-    console.log(showMenu)
 
     return (
         <div className={cx("background-color", "container", showMenu&&"active")}>

@@ -149,8 +149,9 @@
     transform: translateX(0);
 }
 
-
-
+.toast-position{
+    top: 4rem !important;
+}
 
 @media (min-width: 1280px) and (max-width:1535px) {
   
@@ -259,5 +260,7 @@
             text-align: center;
         }
     }
-
+    .toast-position{
+        top: 0 !important;
+    }
 }

@@ -42,10 +42,7 @@ function SearchBar() {
         setSearchInput('')
         inputRef.current.focus()
     }
-
-
-    console.log(document.getElementsByClassName(cx("search"))[0])
-
+    
     return (
         <Tippy
             onClickOutside={handleHideResult}

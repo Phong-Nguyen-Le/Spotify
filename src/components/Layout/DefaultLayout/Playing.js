@@ -12,11 +12,6 @@ export default function Playing() {
         handleSetSong(song.id+1)
     }
 
-    useEffect(()=> {
-        console.log(player.current)
-
-    })
-
     const handleClickPrevious = () => {
         handleSetSong(song.id-1)
     }
