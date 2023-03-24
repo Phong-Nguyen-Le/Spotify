@@ -8,7 +8,7 @@ import VipPage from '../pages/VipPage';
 import NewSong from '../pages/NewSong'
 import MusicGenre from '../pages/MusicGenre'
 import Top100 from '../pages/Top100'
-import Mv from '../pages/Mv'
+import StorePage from '../pages/StorePage'
 
 const headphoneIcon = <i class="fa-solid fa-headphones-simple"></i>
 const glassIcon = <i class="fa-solid fa-magnifying-glass"></i>
@@ -27,12 +27,11 @@ const publicRoutes = [
     {path: '/newsong', component: NewSong, name: 'NewSong', icon: musicIcon},
     {path: '/musicgenre', component: MusicGenre, name: 'MusicGenre', icon: indentIcon },
     {path: '/top100', component: Top100, name: 'Top100', icon: rankIcon},
-    {path: '/mv', component: Mv, name: 'Mv', icon: videoIcon},
+    {path: '/store', component: StorePage, name: 'Mv', icon: videoIcon, layout: 'store'},
     {path: '/loginPage', component: LoginPage, name: 'Login',icon:loginIcon, layout: 'login'},
     {path: '/vippage', component: VipPage, name: 'VipPage', icon: podcastIcon, layout: 'VipPage'},
+
 ]   
-
-
 
 
 const privateRoutes = [
