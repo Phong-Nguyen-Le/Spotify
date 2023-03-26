@@ -6,7 +6,12 @@ const cx = classNames.bind(styles)
 
 function MusicStore () {
   return (
-    <div>Store</div>
+    <>
+    <div>
+
+    
+    </div>
+    </>
   )
 }
 
